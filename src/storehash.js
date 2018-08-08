@@ -5,7 +5,7 @@ const address = '0x4f31fe4da975a1e01667df507df3ea130f21baa6';
 
 //Deployed contract ABI
 const abi = [
-    [{
+    {
             "constant": false,
             "inputs": [{
                 "name": "x",
@@ -29,7 +29,6 @@ const abi = [
             "stateMutability": "view",
             "type": "function"
         }
-    ]
 ];
 
 export default new web3.eth.Contract(abi, address);
